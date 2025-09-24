@@ -4,11 +4,12 @@ import { IoMdRefresh } from "react-icons/io";
 import { TbLayoutList } from "react-icons/tb";
 import { IoSettingsOutline } from "react-icons/io5";
 import Input from '../InputFields/Input';
-
+import { MdOutlineLightMode } from "react-icons/md";
 import { LuLayoutGrid } from "react-icons/lu";
 import { useSidebar } from "../../Context/sidebarContext";
 import { useNavbar } from "../../Context/navbarContext";
 import { useLocation } from "react-router-dom";
+import ThemeSwitcherButton from "../Buttons/ThemeSwitcherButton";
 
 
 const Navbar = () => {
@@ -59,6 +60,7 @@ const {pathname: path} = useLocation();
 
 
                         <IoSettingsOutline />
+                        <ThemeSwitcherButton />
                     </div>
                     <div>
                         <div className='w-[30px] h-[30px] bg-amber-900 rounded-full'>
