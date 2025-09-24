@@ -17,7 +17,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
             <Sidebar />
           </div>
-          <div className='flex-1'>
+          <div className='flex-1 '>
 
             {children}
           </div>
